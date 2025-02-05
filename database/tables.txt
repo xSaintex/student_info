@@ -1,0 +1,13 @@
+CREATE DATABASE class_information;
+
+USE class_information;
+
+-- Student Information Table
+CREATE TABLE IF NOT EXISTS students (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  program VARCHAR(100) NOT NULL,
+  college VARCHAR(100) NOT NULL,
+  year ENUM('1', '2', '3', '4', '5') NOT NULL,
+  grade DECIMAL(4,2) NOT NULL
+);
